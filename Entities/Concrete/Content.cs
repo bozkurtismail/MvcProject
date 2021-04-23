@@ -22,7 +22,7 @@ namespace Entities.Concrete
         public int HeadingID { get; set; }
         public virtual Heading Heading { get; set; }
 
-        public int WriterID { get; set; }
+        public int? WriterID { get; set; }//soru işareti ile nullable type olduğu belirtildi.
         public virtual Writer Writer { get; set; }
     }
 }
